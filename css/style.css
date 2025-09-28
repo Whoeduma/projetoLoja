@@ -1,0 +1,122 @@
+body {
+  background-color: #f8f9fa; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== Título ====== */
+h2 {
+  color: #343a40;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #343a40;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ====== Tabela ====== */
+table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ======= imagens ======== */
+table img {
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+table img:hover {
+  transform: scale(1.05); /* efeito  de zoom */
+}
+
+/* ====== Produto ====== */
+td strong {
+  color: #212529;
+  font-size: 1rem;
+}
+
+td small {
+  display: block; /* força quebra de linha */
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+/* ====== Botões de quantidade  ====== */
+span.btn {
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+}
+
+span.btn:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.footer {
+  background-color: #e9ecef; ;
+  border-top: 1px solid #dee2e6;
+  padding: 15px 0;
+}
+
+.subtotal-footer strong {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.subtotal-footer span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn-footer-outline {
+  background: transparent;
+  border: 1px solid #6c757d;
+  color: #111111ff;
+  padding: 6px 16px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.btn-footer-outline:hover {
+  background: #dee2e6;
+}
+
+.btn-footer {
+  background: #343a40;
+  border: none;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.btn-footer:hover {
+  background: #23272b;
+}
+
+.logo {
+  height: auto;
+  width: auto;
+  max-width: 115px; /* evita que fique gigante */
+}
+.header {
+  padding: 10px 0; /* ajusta o espaço do header */
+}
